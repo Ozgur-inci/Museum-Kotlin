@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SignupAcitivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgraund"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailSingup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/input_shape"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="e-posta"
+        android:singleLine="true"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/emailSingup"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/input_shape"
+        android:padding="20dp"
+        android:hint="Username"
+        android:id="@+id/Singin_Username"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Singin_Username"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/input_shape"
+        android:padding="20dp"
+        android:hint="Password"
+        android:id="@+id/Singin_Passwd"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Singin_Passwd"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/input_shape"
+        android:padding="20dp"
+        android:hint="Password (again)"
+        android:id="@+id/Singin_Passwdagain"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Savebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Singin_Passwdagain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/btn_shape"
+        android:onClick="Save"
+        android:text="SAVE"
+        android:textColorLink="#FFFFFF" />
+
+
+
+
+
+</RelativeLayout>

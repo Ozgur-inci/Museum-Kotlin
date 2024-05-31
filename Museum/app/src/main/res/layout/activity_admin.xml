@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AdminActivity"
+    android:background="@drawable/backgraund">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="80dp"
+        android:onClick="selectimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/selimage" />
+
+    <EditText
+        android:id="@+id/uploadnametxt"
+        android:layout_width="274dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_shape"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:hint=" Name"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/uploadyeartxt"
+        android:layout_width="274dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/input_shape"
+        android:ems="10"
+        android:hint=" Year"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadnametxt" />
+
+    <EditText
+        android:id="@+id/uploadexplanationtxt"
+        android:layout_width="274dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/input_shape"
+        android:ems="10"
+        android:hint=" Explanation"
+        android:textColor="@color/white"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadyeartxt" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/btn_shape"
+        android:onClick="uploadbutton"
+        android:text="Upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadexplanationtxt" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="81dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/play" />
+</androidx.constraintlayout.widget.ConstraintLayout>
